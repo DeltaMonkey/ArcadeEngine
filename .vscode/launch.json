@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug ArcadeEngine",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/Build/Debug/ArcadeEngine.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/Build/Debug",
+            "environment": [],
+            "console": "integratedTerminal",
+            "preLaunchTask": "Build"
+        }
+    ]
+}
