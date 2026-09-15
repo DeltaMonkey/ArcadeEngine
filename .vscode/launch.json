@@ -8,7 +8,7 @@
             "program": "${workspaceFolder}/Build/Debug/ArcadeEngine.exe",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${workspaceFolder}/Build/Debug",
+            "cwd": "${workspaceFolder}",
             "environment": [],
             "console": "integratedTerminal",
             "preLaunchTask": "Build"
