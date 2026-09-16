@@ -16,10 +16,7 @@ void Engine::ProcessEvents()
 {
     while(const std::optional<sf::Event> event = window_.pollEvent()) 
     {
-        if(event->is<sf::Event::Closed>())
-        {
-            window_.close();
-        }
+        event->visit(EngineVisitor{*this});
     }
 }
 
@@ -33,5 +30,10 @@ void Engine::Render()
     window_.clear();
 
     window_.display();
+}
+
+void Engine::EventWindowClose()
+{
+    window_.close();
 }
 

@@ -3,6 +3,8 @@
 #include <optional>
 #include <SFML/Graphics.hpp>
 
+#include "Core/EngineVisitor.h"
+
 class Engine{
     private:
         sf::RenderWindow window_;
@@ -16,4 +18,8 @@ class Engine{
         void Update();
         void Render();
 
+    private:
+        friend EngineVisitor;
+
+        void EventWindowClose();
 };
