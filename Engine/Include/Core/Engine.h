@@ -4,10 +4,12 @@
 #include <SFML/Graphics.hpp>
 
 #include "Core/EngineVisitor.h"
+#include "Core/EngineContext.h"
 
 class Engine{
     private:
         sf::RenderWindow window_;
+        EngineContext context_;
 
     public:
         Engine();
